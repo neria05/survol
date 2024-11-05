@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol spart offene Tabs und Zeit durch eine Vorschau des Links indem du über den Link fährst."
+        "message": "Linker spart offene Tabs und Zeit durch eine Vorschau des Links indem du über den Link fährst."
     },
 
 
@@ -15,7 +15,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "Aktiviere Survol auf dieser Seite",
+        "message": "Aktiviere Linker auf dieser Seite",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {

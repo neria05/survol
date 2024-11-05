@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol taupo jūsų skirtukus ir laiką leidžiant, užvedus pelę ant nuorodos, ją peržiūrėti iššokančiame lange"
+        "message": "Linker taupo jūsų skirtukus ir laiką leidžiant, užvedus pelę ant nuorodos, ją peržiūrėti iššokančiame lange"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Šis tekstas yra rodomas iššokančiame lange, kai plėtinio piktograma yra spragtelėta"
     },
     "enableOnPage": {
-        "message": "Įjungti Survol šiame puslapyje ?",
+        "message": "Įjungti Linker šiame puslapyje ?",
         "description": "Šis tekstas yra rodomas iššokančiame lange, kai plėtinio piktograma yra spragtelėta"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Šis tekstas yra rodomas iššokančiame lange, kai plėtinio piktograma yra spragtelėta"
     },
     "allowMetadata": {
-        "message": "Leisti meta-duomenų peržiūrą ? (jei išjungta, Survol rodys tik youtube, twitter, wikipedia, ...)",
+        "message": "Leisti meta-duomenų peržiūrą ? (jei išjungta, Linker rodys tik youtube, twitter, wikipedia, ...)",
         "description": "Šis tekstas yra rodomas iššokančiame lange, kai plėtinio piktograma yra spragtelėta"
     },
     "enableDarkTheme": {

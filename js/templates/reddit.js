@@ -43,7 +43,7 @@ class RedditHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -55,11 +55,11 @@ class RedditHover {
             const commentId = this.redirectLink.split('/').reverse()[1];
 
             window
-                .survolBackgroundRequest(`https://api.reddit.com/api/info/?id=t1_${commentId}`)
+                .LinkerBackgroundRequest(`https://api.reddit.com/api/info/?id=t1_${commentId}`)
                 .then((res) => {
                     const generatedEmbed = RedditHover.redditJsonToHoverElem(res.data, false);
                     let postContainer = document.createElement('div');
-                    postContainer.className = 'survol-tooltiptext survol-tooltiptext-reddit-post';
+                    postContainer.className = 'Linker-tooltiptext Linker-tooltiptext-reddit-post';
                     postContainer.appendChild(generatedEmbed);
 
                     if (window.lastHovered == node) {
@@ -67,7 +67,7 @@ class RedditHover {
                     }
                 })
                 .catch((error) => {
-                    console.error('SURVOL - Background request failed', error);
+                    console.error('Linker - Background request failed', error);
                 });
 
         } else if (this.linkType === 'post') {
@@ -76,11 +76,11 @@ class RedditHover {
             const postId = /\/r\/[^\/]+\/comments\/([a-z0-9]{6,})\//.exec(this.redirectLink)[1];
 
             window
-                .survolBackgroundRequest(`https://api.reddit.com/api/info/?id=t3_${postId}`)
+                .LinkerBackgroundRequest(`https://api.reddit.com/api/info/?id=t3_${postId}`)
                 .then((res) => {
                     const generatedEmbed = RedditHover.redditJsonToHoverElem(res.data);
                     let postContainer = document.createElement('div');
-                    postContainer.className = 'survol-tooltiptext survol-tooltiptext-reddit-post';
+                    postContainer.className = 'Linker-tooltiptext Linker-tooltiptext-reddit-post';
                     postContainer.appendChild(generatedEmbed);
 
                     if (window.lastHovered == node && container.innerHTML == '') {
@@ -88,7 +88,7 @@ class RedditHover {
                     }
                 })
                 .catch((error) => {
-                    console.error('SURVOL - Background request failed', error);
+                    console.error('Linker - Background request failed', error);
                 });
         }
     }
@@ -114,7 +114,7 @@ class RedditHover {
 
     static getAuthor(json) {
         const author = document.createElement('span');
-        author.className = 'survol-reddit-author';
+        author.className = 'Linker-reddit-author';
 
         const postedBy = document.createTextNode('Posted by ');
         const authorBold = document.createElement('b');
@@ -139,7 +139,7 @@ class RedditHover {
         const scoreCommentDisplay = document.createElement('div');
         const upvoteImage = document.createElement('img');
         upvoteImage.src = chrome.extension.getURL('images/upvote.png');
-        upvoteImage.className = 'survol-reddit-upvote-icon';
+        upvoteImage.className = 'Linker-reddit-upvote-icon';
 
         scoreCommentDisplay.appendChild(upvoteImage);
         scoreCommentDisplay.appendChild(document.createTextNode(` ${json.score} `));
@@ -158,14 +158,14 @@ class RedditHover {
 
     static getPostTitle(json) {
         const title = document.createElement('b');
-        title.className = 'survol-reddit-post-title';
+        title.className = 'Linker-reddit-post-title';
         title.appendChild(document.createTextNode(json.title));
         return title;
     }
 
     static getPostImage(json) {
         const image = document.createElement('img');
-        image.classList.add('survol-reddit-image');
+        image.classList.add('Linker-reddit-image');
         image.setAttribute('src', json.thumbnail);
         return image;
     }
@@ -176,24 +176,24 @@ class RedditHover {
 
         // Basic HTML elements for styling
         const container = document.createElement('div');
-        container.classList.add('survol-reddit-container');
+        container.classList.add('Linker-reddit-container');
 
         const divider = document.createElement('div');
-        divider.className = 'survol-divider';
+        divider.className = 'Linker-divider';
 
         const footer = document.createElement('div');
-        footer.className = 'survol-reddit-footer';
+        footer.className = 'Linker-reddit-footer';
 
         const postDetails = document.createElement('span');
-        postDetails.className = 'survol-reddit-post-details';
+        postDetails.className = 'Linker-reddit-post-details';
 
         const redditLogo = document.createElement('img');
         redditLogo.src = chrome.extension.getURL('images/reddit.png');
-        redditLogo.className = 'survol-reddit-logo';
+        redditLogo.className = 'Linker-reddit-logo';
 
         const commentImage = document.createElement('img');
         commentImage.src = chrome.extension.getURL('images/comment.png');
-        commentImage.className = 'survol-reddit-comment-icon';
+        commentImage.className = 'Linker-reddit-comment-icon';
         //-----
 
         const title = RedditHover.getPostTitle(postData);
@@ -218,7 +218,7 @@ class RedditHover {
         } else {
             const commentText = document.createTextNode(isPost ? postData.selftext : postData.body);
             const textElement = document.createElement('p');
-            textElement.className = 'survol-reddit-selftext';
+            textElement.className = 'Linker-reddit-selftext';
             textElement.appendChild(commentText);
             container.appendChild(textElement);
         }

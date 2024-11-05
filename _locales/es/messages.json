@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol ahorra pestañas abiertas y tiempo al obtener una vista previa al colocar el puntero del mouse sobre un enlace"
+        "message": "Linker ahorra pestañas abiertas y tiempo al obtener una vista previa al colocar el puntero del mouse sobre un enlace"
     },
 
     "pageSettings": {
@@ -14,7 +14,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "¿Habilitar Survol en esta pagina?",
+        "message": "¿Habilitar Linker en esta pagina?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -22,7 +22,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "allowMetadata": {
-        "message": "¿Permitir vista previa de metadatos? (si esta desactivado, Survol solo obtendrá una vista previa de youtube, twitter, wikipedia, ...)",
+        "message": "¿Permitir vista previa de metadatos? (si esta desactivado, Linker solo obtendrá una vista previa de youtube, twitter, wikipedia, ...)",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableDarkTheme": {

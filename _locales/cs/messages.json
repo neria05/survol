@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol zobrazí náhled stránky po najetí myší na libovolný odkaz a šetří Vám tak čas i záložky"
+        "message": "Linker zobrazí náhled stránky po najetí myší na libovolný odkaz a šetří Vám tak čas i záložky"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "Povolit Survol na této stránce ?",
+        "message": "Povolit Linker na této stránce ?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "allowMetadata": {
-        "message": "Povolit náhled na metadata ? (pokud zakázáno, Survol zvládne zobrazit pouze náhledy youtube, twitter, wikipedia, ...)",
+        "message": "Povolit náhled na metadata ? (pokud zakázáno, Linker zvládne zobrazit pouze náhledy youtube, twitter, wikipedia, ...)",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableDarkTheme": {

@@ -1,11 +1,11 @@
-.survol-container.hidden {
+.Linker-container.hidden {
     display: none!important;
 }
 
 
 /* Don't even try hiding my tooltip <https://stackoverflow.com/questions/491052/minimum-and-maximum-value-of-z-index> */
 
-.survol-container {
+.Linker-container {
     background-color: white;
     border-radius: 12px!important;
     color: black!important;
@@ -15,38 +15,38 @@
     word-wrap: break-word;
 }
 
-.survol-container.dark-theme {
+.Linker-container.dark-theme {
     background-color: rgb(24, 26, 27);
     color: white!important;
 }
 
-.survol-container.dark-theme a {
+.Linker-container.dark-theme a {
     color: lightblue;
 }
 
-.survol-container h1 {
+.Linker-container h1 {
     line-height: 24px;
 }
 
-#survol-container p, #survol-container h1 {
+#Linker-container p, #Linker-container h1 {
     color: black!important;
 }
 
-#survol-container.dark-theme p, #survol-container.dark-theme h1 {
+#Linker-container.dark-theme p, #Linker-container.dark-theme h1 {
     color: white!important;
 }
 
-.survol-tooltiptext-youtube {
+.Linker-tooltiptext-youtube {
     width: 560px!important;
     height: 315px!important;
 }
 
-.survol-tooltiptext-reddit-post {
+.Linker-tooltiptext-reddit-post {
     max-width: 350px;
     height: auto;
 }
 
-.survol-divider {
+.Linker-divider {
     background-color: lightgrey;
     width: 100%;
     height: 1px;

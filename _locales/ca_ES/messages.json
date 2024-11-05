@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol us estalvia pestanyes i temps previsualitzant tots els enllaços que passeu"
+        "message": "Linker us estalvia pestanyes i temps previsualitzant tots els enllaços que passeu"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Aquest text es mostra a la finestra emergent quan es fa clic a la icona de l'extensió"
     },
     "enableOnPage": {
-        "message": "Vols activar Survol en aquesta pàgina?",
+        "message": "Vols activar Linker en aquesta pàgina?",
         "description": "Aquest text es mostra a la finestra emergent quan es fa clic a la icona de l'extensió"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Aquest text es mostra a la finestra emergent quan es fa clic a la icona de l'extensió"
     },
     "allowMetadata": {
-        "message": "Voleu permetre la previsualització de metadades? (si està desactivat, Survol només previsualitzarà youtube, twitter, wikipedia, ...) ",
+        "message": "Voleu permetre la previsualització de metadades? (si està desactivat, Linker només previsualitzarà youtube, twitter, wikipedia, ...) ",
         "description": "Aquest text es mostra a la finestra emergent quan es fa clic a la icona de l'extensió"
     },
     "enableDarkTheme": {
@@ -32,11 +32,11 @@
     },
 
     "thankInstallation": {
-        "message": "Gràcies per instal·lar Survol",
+        "message": "Gràcies per instal·lar Linker",
         "description": "Text que es mostra a la pàgina integrada a la instal·lació"
     },
-    "survolUpdated": {
-        "message": "Survol s'ha actualitzat",
+    "LinkerUpdated": {
+        "message": "Linker s'ha actualitzat",
         "description": "Text que es mostra a la pàgina d’incorporació a l’actualització"
     }
 }

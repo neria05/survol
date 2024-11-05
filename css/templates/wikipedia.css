@@ -1,4 +1,4 @@
-.survol-wikipedia-container {
+.Linker-wikipedia-container {
     background-attachment: scroll;
     background-clip: border-box;
     background-image: none;
@@ -16,7 +16,7 @@
     margin: 0px!important;
 }
 
-.survol-wikipedia-image {
+.Linker-wikipedia-image {
     transform-origin: 0px 0px;
     width: 320px;
     overflow-x: hidden;
@@ -26,21 +26,21 @@
     border-top-right-radius: 12px;
 }
 
-.survol-wikipedia-text {
+.Linker-wikipedia-text {
     padding: 16px!important;
     min-height: 40px;
     /*position:relative;*/
 }
 
-.survol-wikipedia-text h1 {
+.Linker-wikipedia-text h1 {
     font-style: bold;
     font-size: 24px;
     margin-bottom: 12px;
     line-height: 24px;
 }
 
-.survol-wikipedia-text p,
-.survol-wikipedia-text h1 {
+.Linker-wikipedia-text p,
+.Linker-wikipedia-text h1 {
     margin: 8px;
     text-align: left!important;
     /* text-justify: auto!important;*/

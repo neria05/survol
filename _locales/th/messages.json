@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol ช่วยประหยัดแท็บและเวลาโดยแสดงตัวอย่างลิ้งที่ชี้"
+        "message": "Linker ช่วยประหยัดแท็บและเวลาโดยแสดงตัวอย่างลิ้งที่ชี้"
     },
 
     "pageSettings": {
@@ -14,7 +14,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "เปิดใช้ Survol ที่หน้านี้ ?",
+        "message": "เปิดใช้ Linker ที่หน้านี้ ?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -22,7 +22,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "allowMetadata": {
-        "message": "ยินยอมแสดงตัวอย่าง meta-data ? (ถ้าไม่ Survol จะแสดงตัวอย่างได้แค่ youtube, twitter, wikipedia, ...)",
+        "message": "ยินยอมแสดงตัวอย่าง meta-data ? (ถ้าไม่ Linker จะแสดงตัวอย่างได้แค่ youtube, twitter, wikipedia, ...)",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableDarkTheme": {

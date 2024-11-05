@@ -28,7 +28,7 @@ class SoundCloudHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -39,29 +39,29 @@ class SoundCloudHover {
         if (this.linkType == 'track' || this.linkType == 'profile') {
 
             window
-                .survolBackgroundRequest(`https://soundcloud.com/oembed?url=${this.redirectLink}&format=json`)
+                .LinkerBackgroundRequest(`https://soundcloud.com/oembed?url=${this.redirectLink}&format=json`)
                 .then((res) => {
 
                     let soundCloudContainer = document.createElement('div');
-                    soundCloudContainer.className = 'survol-soundcloud-container';
+                    soundCloudContainer.className = 'Linker-soundcloud-container';
 
                     let title = document.createElement('h1');
                     title.appendChild(document.createTextNode(res.data.title));
 
                     let description = document.createElement('p');
-                    description.className = 'survol-soundcloud-description';
+                    description.className = 'Linker-soundcloud-description';
                     let descriptionMaxLength = 72;
                     let truncatedDescription = res.data.description.length >= descriptionMaxLength ? `${res.data.description.slice(0, descriptionMaxLength)}...` : res.data.description;
                     description.appendChild(document.createTextNode(truncatedDescription));
 
                     let textContainer = document.createElement('div');
-                    textContainer.className = 'survol-soundcloud-text';
+                    textContainer.className = 'Linker-soundcloud-text';
 
                     let soundCloudImageContainer = document.createElement('div');
-                    soundCloudImageContainer.className = 'survol-soundcloud-image-container';
+                    soundCloudImageContainer.className = 'Linker-soundcloud-image-container';
 
                     let image = document.createElement('div');
-                    image.className = 'survol-soundcloud-image';
+                    image.className = 'Linker-soundcloud-image';
                     image.style.backgroundImage = `url(${res.data.thumbnail_url})`;
                     image.style.backgroundPosition = 'center';
                     image.style.backgroundSize = 'cover';
@@ -78,7 +78,7 @@ class SoundCloudHover {
                     }
                 })
                 .catch((res) => {
-                    console.log('[Error] Survol - SoundCloud.js - Can\'t fetch API.', res);
+                    console.log('[Error] Linker - SoundCloud.js - Can\'t fetch API.', res);
                 });
         }
     }

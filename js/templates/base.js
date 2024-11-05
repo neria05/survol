@@ -11,7 +11,7 @@ class BaseHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -25,7 +25,7 @@ class BaseHover {
             // we use meta-data to build a preview
             // We start by requesting the page in text mode
             window
-                .survolBackgroundRequest(node.href, true)
+                .LinkerBackgroundRequest(node.href, true)
                 .then((res) => {
 
                     // We then use a DOMParser to extract data from the response
@@ -44,17 +44,17 @@ class BaseHover {
 
                         // re-using wikipedia css
                         let wikipediaContainer = document.createElement('div');
-                        wikipediaContainer.className = 'survol-wikipedia-container';
+                        wikipediaContainer.className = 'Linker-wikipedia-container';
 
                         /* If there is a thumbnail */
                         if (thumbnail) {
                             let wikipediaImageContainer = document.createElement('div');
-                            wikipediaImageContainer.className = 'survol-wikipedia-image-container';
+                            wikipediaImageContainer.className = 'Linker-wikipedia-image-container';
 
 
                             let image = document.createElement('img');
                             image.src = thumbnail;
-                            image.className = 'survol-wikipedia-image';
+                            image.className = 'Linker-wikipedia-image';
 
                             wikipediaImageContainer.appendChild(image);
                             wikipediaContainer.appendChild(wikipediaImageContainer);
@@ -64,7 +64,7 @@ class BaseHover {
                         webTitle.appendChild(document.createTextNode(title));
 
                         let textContainer = document.createElement('div');
-                        textContainer.className = 'survol-wikipedia-text';
+                        textContainer.className = 'Linker-wikipedia-text';
 
                         let text = document.createElement('p');
                         text.appendChild(document.createTextNode(description));
@@ -79,7 +79,7 @@ class BaseHover {
                     }
                 })
                 .catch((error) => {
-                    console.error('SURVOL - Background request failed', error);
+                    console.error('Linker - Background request failed', error);
                 });
         }
 

@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Mettez fin aux fenêtres remplies d'onglets à regarder plus tard, Survol vous permet de jeter un coup d'oeil rapide aux sites que vous survolez avec votre souris!"
+        "message": "Mettez fin aux fenêtres remplies d'onglets à regarder plus tard, Linker vous permet de jeter un coup d'oeil rapide aux sites que vous Linkerez avec votre souris!"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "Activer Survol sur cette page ?",
+        "message": "Activer Linker sur cette page ?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -32,11 +32,11 @@
     },
 
     "thankInstallation": {
-        "message": "Merci d'avoir installé Survol",
+        "message": "Merci d'avoir installé Linker",
         "description": "Text displayed on the onboarding page on installation"
     },
-    "survolUpdated": {
-        "message": "Survol a été mis à jour",
+    "LinkerUpdated": {
+        "message": "Linker a été mis à jour",
         "description": "Text displayed on the onboarding page on update"
     }
 }

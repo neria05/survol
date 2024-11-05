@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol economiza tempo e abas pré-visualizando cada link que você passa o mouse"
+        "message": "Linker economiza tempo e abas pré-visualizando cada link que você passa o mouse"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Esse texto é exibido no popup quando o ícone da extensão é clicado"
     },
     "enableOnPage": {
-        "message": "Habilitar Survol nesta página?",
+        "message": "Habilitar Linker nesta página?",
         "description": "Esse texto é exibido no popup quando o ícone da extensão é clicado"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Esse texto é exibido no popup quando o ícone da extensão é clicado"
     },
     "allowMetadata": {
-        "message": "Permitir pré-visualização de meta-data? (se desabilitado Survol irá apenas pré-visualizar youtube, twitter, wikipedia, ...)",
+        "message": "Permitir pré-visualização de meta-data? (se desabilitado Linker irá apenas pré-visualizar youtube, twitter, wikipedia, ...)",
         "description": "Esse texto é exibido no popup quando o ícone da extensão é clicado"
     },
     "enableDarkTheme": {
@@ -32,11 +32,11 @@
     },
 
     "thankInstallation": {
-        "message": "Obrigado por instalar Survol",
+        "message": "Obrigado por instalar Linker",
         "description": "Texto exibido na página de integração na instalação"
     },
-    "survolUpdated": {
-        "message": "Survol foi atualizado",
+    "LinkerUpdated": {
+        "message": "Linker foi atualizado",
         "description": "Texto exibido na página de integração na atualização"
     }
 }

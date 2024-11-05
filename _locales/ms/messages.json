@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol menjimatkan tab dan masa dengan melihat pratonton setiap pautan yang anda arahkan"
+        "message": "Linker menjimatkan tab dan masa dengan melihat pratonton setiap pautan yang anda arahkan"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "Benarkan Survol di halaman ini ?",
+        "message": "Benarkan Linker di halaman ini ?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "allowMetadata": {
-        "message": "Benarkan pratonton data meta ? (jika dimatikan Survol hanya akan melihat pratonton youtube, twitter, wikipedia, ...)",
+        "message": "Benarkan pratonton data meta ? (jika dimatikan Linker hanya akan melihat pratonton youtube, twitter, wikipedia, ...)",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableDarkTheme": {
@@ -32,11 +32,11 @@
     },
 
     "thankInstallation": {
-        "message": "Terima kasih kerana memasang Survol",
+        "message": "Terima kasih kerana memasang Linker",
         "description": "Text displayed on the onboarding page on installation"
     },
-    "survolUpdated": {
-        "message": "Survol telah dikemas kini",
+    "LinkerUpdated": {
+        "message": "Linker telah dikemas kini",
         "description": "Text displayed on the onboarding page on update"
     }
 }

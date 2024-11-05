@@ -44,7 +44,7 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
                     res.data = error;
                     res.status = 'error';
                     sendResponse(res);
-                    console.error('SURVOL - Fetching error', error);
+                    console.error('Linker - Fetching error', error);
                 });
         }
     }
@@ -61,7 +61,7 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
 // Those are the extension default settings
 const DEFAULT_SETTINGS = {
     version: '0.6.0',
-    disabledDomains: ['survol.me'],
+    disabledDomains: ['Linker.me'],
     selfReferDisabled: ['github.com', 'ppy.sh'],
     previewMetadata: true,
     darkThemeToggle: false,
@@ -74,7 +74,7 @@ chrome.runtime.onInstalled.addListener(() => {
     // Initialize settings
     chrome.storage.local.get(Object.keys(DEFAULT_SETTINGS), (res) => {
 
-        // In order to chose between "Thanks for installing the extension" and "Survol has been updated"
+        // In order to chose between "Thanks for installing the extension" and "Linker has been updated"
         let oldVersion = res.version;
 
         res.version = DEFAULT_SETTINGS.version;

@@ -3,7 +3,7 @@ import { bootstrap } from './bootstrap.js';
 (function () {
 
     async function getReleaseLog() {
-        return fetch('https://api.github.com/repos/mdolr/survol/releases?page=1&per_page=5')
+        return fetch('https://api.github.com/repos/neria05/Linker/releases?page=1&per_page=5')
             .then(function (res) {
                 return res.json();
             });

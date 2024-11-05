@@ -1,4 +1,4 @@
-.survol-youtube-container {
+.Linker-youtube-container {
     background-attachment: scroll;
     background-clip: border-box;
     background-image: none;
@@ -16,7 +16,7 @@
     margin: 0px!important;
 }
 
-.survol-youtube-image {
+.Linker-youtube-image {
     transform-origin: 0px 0px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -26,23 +26,23 @@
     border-top-right-radius: 12px;
 }
 
-.survol-youtube-text {
+.Linker-youtube-text {
     padding: 16px!important;
     min-height: 40px;
     /*position:relative;*/
 }
 
-.survol-youtube-text h1 {
+.Linker-youtube-text h1 {
     font-style: bold;
     font-size: 20px;
     margin-bottom: 12px;
 }
 
-.survol-youtube-text p {
+.Linker-youtube-text p {
     font-size: 14px;
 }
 
-.survol-youtube-text p,
-.survol-youtube-text h1 {
+.Linker-youtube-text p,
+.Linker-youtube-text h1 {
     margin: 8px;
 }

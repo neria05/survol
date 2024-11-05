@@ -1,7 +1,7 @@
 /* core.js is the heart of the extension.
  * It is a content script, injected on each page.
  * 
- * The core script injects the "survol-container" div into the DOM,
+ * The core script injects the "Linker-container" div into the DOM,
  * positions the div, and fill it with content.
  * 
  * It uses the mousemove event to detect when the cursor is hovering an anchor link (<a href>)
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     var CURRENT_TAB = document.location.href;
 
-    // The survol container div used to preview content.
+    // The Linker container div used to preview content.
     var container = document.createElement('div');
 
     // Those are settings
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', () => {
      * Using the background script to pull data from APIs safely, i.e forwarding request from the content script to the background script
      * Direct asynchronous messaging, making it as a function to avoid having some request code across every file
      *
-     * survolBackgroundRequest
+     * LinkerBackgroundRequest
      * Parameters:
      * url - {String} - The request URL
      * noJSON - {Boolean} - If the response should be JSON parsed or just returned as text
      *
      * The whole logic behind this function is situated in js/background/auxiliary.js
      */
-    window.survolBackgroundRequest = (url, noJSON) => {
+    window.LinkerBackgroundRequest = (url, noJSON) => {
         return new Promise((resolve, reject) => {
             chrome.runtime.sendMessage({ action: 'request', data: { url, noJSON } }, (res) => {
                 (res.status == 'OK') ? resolve(res): reject(res);
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    /* insertSurvolDiv
+    /* insertLinkerDiv
      * Parameters: 
      * selfReferDisabled - {Boolean} - A setting to disable preview of inner links on a list of websites.
      *
@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
      * - Applies the div theme (light/dark)
      * - Detects anchor link hovering
      */
-    function insertSurvolDiv(selfReferDisabled) {
+    function insertLinkerDiv(selfReferDisabled) {
         return new Promise((resolve) => {
-            container.className = `survol-container ${darkTheme ? 'dark-theme' : ''} hidden`;
-            container.id = 'survol-container';
+            container.className = `Linker-container ${darkTheme ? 'dark-theme' : ''} hidden`;
+            container.id = 'Linker-container';
 
             //set the buffer (popup distance from mouse)
             const buffer = 20;
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     else {
                         // The user doesn't want to preview anything, hide the container
                         clearTimeout(intentTimeout);
-                        container.className = `survol-container ${darkTheme ? 'dark-theme' : ''} hidden`;
+                        container.className = `Linker-container ${darkTheme ? 'dark-theme' : ''} hidden`;
                         container.innerHTML = '';
                     }
                 }
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // make sure the link is correct and then bind the template to the container
             if (potentialHover && potentialHover.bindToContainer != null && node.href && node.href.startsWith('http')) {
                 potentialHover.bindToContainer(node, domain, container);
-                container.className = `survol-container ${darkTheme ? 'dark-theme' : ''}`;
+                container.className = `Linker-container ${darkTheme ? 'dark-theme' : ''}`;
                 window.lastHovered = node;
             }
 
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // This part is used to determine the environnement in which the extension is running
-    // as this script is also used on https://survol.me so users can test the extension
+    // as this script is also used on https://Linker.me so users can test the extension
     // before downloading it
 
     // If running in extension mode
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.storage.local.get(['disabledDomains', 'selfReferDisabled', 'previewMetadata', 'darkThemeToggle'], function (res) {
 
             // Initialize the settings in case they're not
-            let disabledDomains = res.disabledDomains ? res.disabledDomains : ['survol.me'];
+            let disabledDomains = res.disabledDomains ? res.disabledDomains : ['Linker.me'];
             let selfReferDisabled = res.selfReferDisabled ? res.selfReferDisabled.includes(getDomain(CURRENT_TAB).toLowerCase()) : false;
 
             if (res.previewMetadata === false) {
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // and the current website is not a wordpress admin panel (have encoutered some problems with the extension there in the past)
             if (!disabledDomains.includes(getDomain(CURRENT_TAB).toLowerCase()) && !CURRENT_TAB.includes('/wp-admin')) {
                 chrome.runtime.sendMessage({ action: 'state', data: 'ON' });
-                insertSurvolDiv(selfReferDisabled);
+                insertLinkerDiv(selfReferDisabled);
             } else {
                 chrome.runtime.sendMessage({ action: 'state', data: 'OFF' });
             }
@@ -238,9 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Else the script is running in demo-mode on survol.me, no need to worry about settings
+    // Else the script is running in demo-mode on Linker.me, no need to worry about settings
     else {
-        insertSurvolDiv();
+        insertLinkerDiv();
     }
 
 

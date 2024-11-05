@@ -1,12 +1,12 @@
 {
   "extensionName": {
-      "message": "Survol"
+      "message": "Linker"
   },
   "extensionShortName": {
-      "message": "Survol"
+      "message": "Linker"
   },
   "extensionDescription": {
-      "message": "Survol با پیش‌نمایش صفحه هنگام نگه داشتن موس روی یک پیوند در زمان شما صرفه جویی می کند! "
+      "message": "Linker با پیش‌نمایش صفحه هنگام نگه داشتن موس روی یک پیوند در زمان شما صرفه جویی می کند! "
   },
 
 
@@ -32,11 +32,11 @@
   },
 
   "thankInstallation": {
-      "message": "از شما برای تصب Survol متشکریم!",
+      "message": "از شما برای تصب Linker متشکریم!",
       "description": "Text displayed on the onboarding page on installation"
   },
-  "survolUpdated": {
-      "message": "Survol به زور رسانی شد.",
+  "LinkerUpdated": {
+      "message": "Linker به زور رسانی شد.",
       "description": "Text displayed on the onboarding page on update"
   }
 }

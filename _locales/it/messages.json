@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol salva le tue schede e il tuo tempo dando un'anteprima di ogni link su cui sposti il cursore"
+        "message": "Linker salva le tue schede e il tuo tempo dando un'anteprima di ogni link su cui sposti il cursore"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Questo testo appare nel popup quando l'icona dell'estensione viene cliccata"
     },
     "enableOnPage": {
-        "message": "Vuoi attivare Survol in questa pagina?",
+        "message": "Vuoi attivare Linker in questa pagina?",
         "description": "Questo testo appare nel popup quando l'icona dell'estensione viene cliccata"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Questo testo appare nel popup quando l'icona dell'estensione viene cliccata"
     },
     "allowMetadata": {
-        "message": "Vuoi attivare l'anteprima dei meta-data? (se disattivata, Survol darà un'anteprima solo di youtube, twitter, wikipedia, ...)",
+        "message": "Vuoi attivare l'anteprima dei meta-data? (se disattivata, Linker darà un'anteprima solo di youtube, twitter, wikipedia, ...)",
         "description": "Questo testo appare nel popup quando l'icona dell'estensione viene cliccata"
     },
     "enableDarkTheme": {

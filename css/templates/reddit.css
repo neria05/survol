@@ -1,10 +1,10 @@
-.survol-reddit-container {
+.Linker-reddit-container {
     width: 320px;
     text-align: left;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.survol-reddit-image {
+.Linker-reddit-image {
     display: block;
     margin: auto;
     width: 320px;
@@ -12,19 +12,19 @@
     border-top-right-radius: 12px;
 }
 
-.survol-reddit-selftext {
+.Linker-reddit-selftext {
     padding: 16px;
     margin: 0px;
 }
 
-.survol-reddit-footer {
+.Linker-reddit-footer {
     display: flex;
     text-align: left;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.survol-reddit-post-title {
+.Linker-reddit-post-title {
     text-align: left;
     font-size: 16px;
     padding: 16px;
@@ -32,24 +32,24 @@
     flex: 1 1 calc(100% - 100px);
 }
 
-.survol-reddit-logo {
+.Linker-reddit-logo {
     width: 45px;
     height: 45px;
     margin-left: 16px;
     flex: 0 0 45px;
 }
 
-.survol-reddit-post-details {
+.Linker-reddit-post-details {
     justify-content: center;
     padding: 16px 16px 16px 16px;
     font-size: 14px;
 }
 
-.survol-reddit-upvote-icon {
+.Linker-reddit-upvote-icon {
     height: 1em;
 }
 
-.survol-reddit-comment-icon {
+.Linker-reddit-comment-icon {
     top: 2px;
     height: 1em;
     position: relative;
@@ -59,8 +59,8 @@
 
 /*
 
-.survol-reddit-top,
-.survol-reddit-post-details {
+.Linker-reddit-top,
+.Linker-reddit-post-details {
     padding: 10px;
     color: grey;
     display: inline;

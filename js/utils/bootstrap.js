@@ -22,7 +22,7 @@ const bootstrap = (function () {
 
     function bindEventListenersAndUpdateUI() {
         chrome.storage.local.get(['disabledDomains', 'previewMetadata', 'darkThemeToggle', 'installationType', 'selfReferDisabled'], function (res) {
-            let disabledDomains = res.disabledDomains ? res.disabledDomains : ['survol.me'];
+            let disabledDomains = res.disabledDomains ? res.disabledDomains : ['Linker.me'];
             let selfReferDisabled = res.selfReferDisabled ? res.selfReferDisabled : [];
             let previewMetadata = true;
             let darkTheme = false;
@@ -40,14 +40,14 @@ const bootstrap = (function () {
 
             switch (res.installationType) {
                 case 'install':
-                    document.getElementById('welcomeMessage').innerText = chrome.i18n.getMessage('thankInstallation') || 'Survol';
+                    document.getElementById('welcomeMessage').innerText = chrome.i18n.getMessage('thankInstallation') || 'Linker';
                     break;
                 case 'update':
-                    document.getElementById('welcomeMessage').innerText = chrome.i18n.getMessage('survolUpdated') || 'Survol';
+                    document.getElementById('welcomeMessage').innerText = chrome.i18n.getMessage('LinkerUpdated') || 'Linker';
                     break;
                 case 'none':
                 default:
-                    document.getElementById('welcomeMessage').innerText = 'Survol';
+                    document.getElementById('welcomeMessage').innerText = 'Linker';
                     break;
             }
 

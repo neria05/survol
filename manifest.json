@@ -1,10 +1,10 @@
 {
-    "manifest_version": 2,
-    "version": "0.6.2",
+    "manifest_version": 3,
+    "version": "1.0.0",
     "name": "__MSG_extensionName__",
     "short_name": "__MSG_extensionShortName__",
     "description": "__MSG_extensionDescription__",
-    "author": "Maxime DOLORES - mdolr",
+    "author": "Ner online - Neria",
     "default_locale": "en",
     "permissions": [
         "https://*/*",
@@ -55,7 +55,7 @@
         "scripts": ["js/background/auxiliary.js"]
     },
     "browser_action": {
-        "default_title": "Survol",
+        "default_title": "Linker",
         "default_popup": "html/popup.html"
     },
     "web_accessible_resources": [

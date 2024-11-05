@@ -1,4 +1,4 @@
-.survol-twitter-container {
+.Linker-twitter-container {
     width: 559px;
     font-size: 14px;
     line-height: 20px;
@@ -10,24 +10,24 @@
     text-align: left;
 }
 
-.survol-twitter-author-container {
+.Linker-twitter-author-container {
     display: flex;
     flex-direction: column;
 }
 
-.survol-twitter-container img {
+.Linker-twitter-container img {
     border-radius: 50%!important;
 }
 
-.survol-twitter-hover {
+.Linker-twitter-hover {
     font-size: 16px;
 }
 
-.survol-twitter-at {
+.Linker-twitter-at {
     color: #727171;
 }
 
-.survol-twitter-content {
+.Linker-twitter-content {
     margin-top: 1px;
     max-height: 80px;
     max-width: 100%;
@@ -35,13 +35,13 @@
     word-wrap: break-word;
 }
 
-.survol-twitter-source {
+.Linker-twitter-source {
     color: #657786;
     font-size: 14px;
     line-height: 20px;
 }
 
-.survol-twitter-date {
+.Linker-twitter-date {
     color: #727171;
     font-size: 14px;
 }

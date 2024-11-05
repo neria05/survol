@@ -28,7 +28,7 @@ class YoutubeHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -38,28 +38,28 @@ class YoutubeHover {
     bindToContainer(node, domain, container) {
         if (this.linkType == 'video') {
             window
-                .survolBackgroundRequest(`https://www.youtube.com/oembed?url=${this.redirectLink}&format=json`)
+                .LinkerBackgroundRequest(`https://www.youtube.com/oembed?url=${this.redirectLink}&format=json`)
                 .then((res) => {
 
                     let youtubeContainer = document.createElement('div');
-                    youtubeContainer.className = 'survol-youtube-container';
+                    youtubeContainer.className = 'Linker-youtube-container';
 
                     let title = document.createElement('h1');
                     title.appendChild(document.createTextNode(res.data.title));
 
                     let text = document.createElement('p');
-                    text.className = 'survol-twitter-author'
+                    text.className = 'Linker-twitter-author'
                     text.appendChild(document.createTextNode(res.data.author_name));
 
                     let textContainer = document.createElement('div');
-                    textContainer.className = 'survol-youtube-text';
+                    textContainer.className = 'Linker-youtube-text';
 
                     let youtubeImageContainer = document.createElement('div');
-                    youtubeImageContainer.className = 'survol-youtube-image-container';
+                    youtubeImageContainer.className = 'Linker-youtube-image-container';
 
                     let image = document.createElement('div');
 
-                    image.className = 'survol-youtube-image';
+                    image.className = 'Linker-youtube-image';
                     image.style.backgroundImage = `url(${res.data.thumbnail_url})`;
                     image.style.backgroundPosition = 'center';
                     image.style.backgroundSize = 'cover';

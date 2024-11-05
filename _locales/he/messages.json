@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "חוסך לך בלשוניות וזמן על ידי תצוגה מקדימה של כל קישור עליו אתה מעביר Survol"
+        "message": "חוסך לך בלשוניות וזמן על ידי תצוגה מקדימה של כל קישור עליו אתה מעביר Linker"
     },
 
     "pageSettings": {
@@ -14,7 +14,7 @@
         "description": "טקסט זה מוצג בחלון הקופץ כאשר לוחצים על סמל התוסף"
     },
     "enableOnPage": {
-        "message": "Survol לאפשר בדף זה?",
+        "message": "Linker לאפשר בדף זה?",
         "description": "טקסט זה מוצג בחלון הקופץ כאשר לוחצים על סמל התוסף"
     },
     "generalSettings": {

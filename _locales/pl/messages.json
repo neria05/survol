@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol oszczędza Twoje zakładki i czas przez podgląd linku po najechaniu na niego"
+        "message": "Linker oszczędza Twoje zakładki i czas przez podgląd linku po najechaniu na niego"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Ten tekst jest wyświetlany w okienku po kliknięciu ikony rozszerzenia"
     },
     "enableOnPage": {
-        "message": "Czy włączyć Survol na tej stronie ?",
+        "message": "Czy włączyć Linker na tej stronie ?",
         "description": "Ten tekst jest wyświetlany w okienku po kliknięciu ikony rozszerzenia"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Ten tekst jest wyświetlany w okienku po kliknięciu ikony rozszerzenia"
     },
     "allowMetadata": {
-        "message": "Pozwól wyświetlać podgląd meta-data ? (jeśli wyłączysz Survol możliwe będzie tylko podglądanie youtube, twitter, wikipedia, ...)",
+        "message": "Pozwól wyświetlać podgląd meta-data ? (jeśli wyłączysz Linker możliwe będzie tylko podglądanie youtube, twitter, wikipedia, ...)",
         "description": "Ten tekst jest wyświetlany w okienku po kliknięciu ikony rozszerzenia"
     },
     "enableDarkTheme": {

@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol vă permite previzualizarea fiecărui link peste care plasați cursorul, economisind timp și tab-uri"
+        "message": "Linker vă permite previzualizarea fiecărui link peste care plasați cursorul, economisind timp și tab-uri"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableOnPage": {
-        "message": "Doriți să activați Survol pe această pagină ?",
+        "message": "Doriți să activați Linker pe această pagină ?",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "allowMetadata": {
-        "message": "Permiteți previzualizarea meta-datelor ? (dacă este dezactivată, Survol va previzualiza doar youtube, twitter, wikipedia, ...)",
+        "message": "Permiteți previzualizarea meta-datelor ? (dacă este dezactivată, Linker va previzualiza doar youtube, twitter, wikipedia, ...)",
         "description": "This text is displayed in the popup when the extension icon is clicked"
     },
     "enableDarkTheme": {

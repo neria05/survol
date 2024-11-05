@@ -22,7 +22,7 @@ class TwitterHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -38,7 +38,7 @@ class TwitterHover {
              */
 
             window
-                .survolBackgroundRequest(`https://publish.twitter.com/oembed?url=${this.redirectLink}&hide_thread=true`)
+                .LinkerBackgroundRequest(`https://publish.twitter.com/oembed?url=${this.redirectLink}&hide_thread=true`)
                 .then(({ data }) => {
                     // Get and clean
                     const { author_name: tweetAuthorName, author_url, html } = data;
@@ -50,7 +50,7 @@ class TwitterHover {
                     const tweetDate = new Date(htmlDocDate).toLocaleDateString(undefined, { dateStyle: 'long' });
 
                     let tweetContainer = document.createElement('div');
-                    tweetContainer.className = 'survol-twitter-container';
+                    tweetContainer.className = 'Linker-twitter-container';
 
                     let profilePicContainer = document.createElement('div');
                     profilePicContainer.style.flexBasis = '50px';
@@ -66,18 +66,18 @@ class TwitterHover {
                     name.style.marginInlineStart = '10px';
 
                     let twitterAt = document.createElement('span');
-                    twitterAt.className = 'survol-twitter-at';
+                    twitterAt.className = 'Linker-twitter-at';
                     twitterAt.appendChild(document.createTextNode(` @${tweetAuthorUsername}`));
                     twitterAt.style.marginInlineStart = '10px';
 
                     let tweetAuthorContainer = document.createElement('div');
-                    tweetAuthorContainer.className = 'survol-twitter-author-container';
+                    tweetAuthorContainer.className = 'Linker-twitter-author-container';
 
                     tweetAuthorContainer.appendChild(name);
                     tweetAuthorContainer.appendChild(twitterAt);
 
                     let author = document.createElement('div');
-                    author.className = 'survol-twitter-author';
+                    author.className = 'Linker-twitter-author';
                     author.style.display = 'flex';
                     author.style.flexDirection = 'row';
                     author.style.flexBasis = 'auto';
@@ -92,7 +92,7 @@ class TwitterHover {
                     let contentContainer = document.createElement('div');
 
                     let date = document.createElement('div');
-                    date.className = 'survol-twitter-date';
+                    date.className = 'Linker-twitter-date';
                     date.appendChild(document.createTextNode(tweetDate));
 
                     // if tweet has no media media is null

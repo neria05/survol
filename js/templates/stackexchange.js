@@ -34,7 +34,7 @@ class StackExchangeHover {
      * Parameters :
      * node - {HTMLNodeElement} - An anchor link element
      * domain - {String} - The domain of the current webpage
-     * container - {HTMLNodeElement} - The survol container
+     * container - {HTMLNodeElement} - The Linker container
      * 
      * This function is called to get the data from the link we
      * want to preview and then attach it to the container
@@ -58,7 +58,7 @@ class StackExchangeHover {
                 const ANSWERS_URL = `https://api.stackexchange.com/2.2/questions/${questionID}/answers?order=desc&sort=activity&site=${site}&filter=withBody`;
 
                 window
-                    .survolBackgroundRequest(QUESTION_URL)
+                    .LinkerBackgroundRequest(QUESTION_URL)
                     .then((res) => {
                         // Make sure the question exists
                         if (res.data && res.data.items && res.data.items[0]) {
@@ -70,7 +70,7 @@ class StackExchangeHover {
                             // If the question has been answered query the answer
                             if (res.data.items[0].is_answered) {
                                 window
-                                    .survolBackgroundRequest(ANSWERS_URL)
+                                    .LinkerBackgroundRequest(ANSWERS_URL)
                                     .then((res) => {
 
                                         // Make sure we can get the answers
@@ -121,19 +121,19 @@ class StackExchangeHover {
 
         // Re-using reddit code
         const generated = document.createElement('div');
-        generated.classList.add('survol-reddit-container');
+        generated.classList.add('Linker-reddit-container');
 
         const divider = document.createElement('div');
-        divider.className = 'survol-divider';
+        divider.className = 'Linker-divider';
 
         const footer = document.createElement('div');
-        footer.className = 'survol-reddit-footer';
+        footer.className = 'Linker-reddit-footer';
 
         const postDetails = document.createElement('span');
-        postDetails.className = 'survol-reddit-post-details';
+        postDetails.className = 'Linker-reddit-post-details';
 
         const author = document.createElement('span');
-        author.className = 'survol-reddit-author';
+        author.className = 'Linker-reddit-author';
 
         const title = document.createElement('strong');
         title.append(document.createTextNode(data.question.title));
@@ -146,7 +146,7 @@ class StackExchangeHover {
         const scoreCommentDisplay = document.createElement('div');
         const upvoteImage = document.createElement('img');
         upvoteImage.src = chrome.extension.getURL('images/upvote.png');
-        upvoteImage.className = 'survol-reddit-upvote-icon';
+        upvoteImage.className = 'Linker-reddit-upvote-icon';
 
         scoreCommentDisplay.appendChild(upvoteImage);
         scoreCommentDisplay.appendChild(document.createTextNode(` ${data.question.score} `));
@@ -199,7 +199,7 @@ class StackExchangeHover {
                     // Normal text
                     else {
                         codeDiv = document.createElement('div');
-                        codeDiv.className = 'survol-code-preview';
+                        codeDiv.className = 'Linker-code-preview';
                         codeDiv.appendChild(document.createTextNode(text));
                         answerContainer.appendChild(codeDiv);
                     }
@@ -207,7 +207,7 @@ class StackExchangeHover {
                     // Normal text
                     if (index % 2 == 1) {
                         codeDiv = document.createElement('div');
-                        codeDiv.className = 'survol-code-preview';
+                        codeDiv.className = 'Linker-code-preview';
                         codeDiv.appendChild(document.createTextNode(text));
                         answerContainer.appendChild(codeDiv);
                     }
@@ -225,7 +225,7 @@ class StackExchangeHover {
         }
 
         const textElement = document.createElement('p');
-        textElement.className = 'survol-reddit-selftext';
+        textElement.className = 'Linker-reddit-selftext';
         textElement.appendChild(commentText);
         generated.appendChild(textElement);
 
@@ -234,7 +234,7 @@ class StackExchangeHover {
         footer.append(postDetails);
 
         let postContainer = document.createElement('div');
-        postContainer.className = 'survol-tooltiptext survol-tooltiptext-reddit-post';
+        postContainer.className = 'Linker-tooltiptext Linker-tooltiptext-reddit-post';
         postContainer.appendChild(generated);
 
         if (window.lastHovered == node && container.innerHTML == '') {

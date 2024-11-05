@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     chrome.storage.local.get(['disabledDomains', 'darkThemeToggle'], function (res) {
-        let disabledDomains = res.disabledDomains ? res.disabledDomains : ['survol.me'];
+        let disabledDomains = res.disabledDomains ? res.disabledDomains : ['Linker.me'];
 
         if (res.darkThemeToggle === true) {
             document.getElementById('body').classList.add('dark-theme');

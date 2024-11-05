@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionShortName": {
-        "message": "Survol"
+        "message": "Linker"
     },
     "extensionDescription": {
-        "message": "Survol sparer fanene og tiden din ved å forhåndsvise hver lenke du holder over"
+        "message": "Linker sparer fanene og tiden din ved å forhåndsvise hver lenke du holder over"
     },
 
 
@@ -15,7 +15,7 @@
         "description": "Denne teksten vises i popupen når du klikker på utvidelseikonet"
     },
     "enableOnPage": {
-        "message": "Aktivere Survol på denne siden?",
+        "message": "Aktivere Linker på denne siden?",
         "description": "Denne teksten vises i popupen når du klikker på utvidelsesikonet"
     },
     "generalSettings": {
@@ -23,7 +23,7 @@
         "description": "Denne teksten vises i popupen når du klikker på utvidelsesikonet"
     },
     "allowMetadata": {
-        "message": "Tillate meta-data forhåndsvisning? (hvis deaktivert vil Survol kun forhåndsvise youtube, twitter, wikipedia, ...)",
+        "message": "Tillate meta-data forhåndsvisning? (hvis deaktivert vil Linker kun forhåndsvise youtube, twitter, wikipedia, ...)",
         "description": "Denne teksten vises i popupen når du klikker på utvidelsesikonet"
     },
     "enableDarkTheme": {
